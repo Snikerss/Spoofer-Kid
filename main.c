@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include <filesystem>
 
 int main() {
 	srand(GetTickCount());
@@ -28,7 +27,7 @@ int main() {
 		});
 	});
 
-	/*
+	
 	OpenThen(HKEY_LOCAL_MACHINE, L"SYSTEM\\CurrentControlSet\\Control\\Video", {
 		ForEachSubkey(key, {
 			HKEY parent = key;
@@ -62,7 +61,7 @@ int main() {
 			});
 		});
 	});
-	*/
+	
 
 	// SMBIOS
 	DeleteValue(HKEY_LOCAL_MACHINE, L"SYSTEM\\CurrentControlSet\\Services\\mssmbios\\Data", L"SMBiosData");
